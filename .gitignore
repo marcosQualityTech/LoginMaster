@@ -1,0 +1,31 @@
+# Dependências do Node.js
+node_modules/
+
+# Dados sensíveis ou confidenciais
+data/
+
+# Logs
+*.log
+
+# Arquivos de cache e temporários
+*.tmp
+*.cache
+
+# Configurações do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Configurações de IDE/Editor
+.vscode/
+.idea/
+
+# Arquivos de build (se houver)
+dist/
+build/
+
+# Backups
+Backup/
+
+# Arquivos de lock (opcional)
+package-lock.json
+yarn.lock

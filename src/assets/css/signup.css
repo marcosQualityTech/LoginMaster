@@ -1,0 +1,19 @@
+/* signup.css */
+.header- {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.password-rules {
+    font-size: 12px;
+    color: red;
+    margin-top: 10px;
+    display: none;
+}
+
+.password-rules li {
+    margin-bottom: 5px;
+}

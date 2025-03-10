@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../assets/css/globals.css">
+    <link rel="stylesheet" href="../assets/css/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Formulário de Login -->
+        <form id="login-form" class="form" novalidate>
+            <div class="login-header">
+                <img src="../assets/images/user-sem-fundo.png" alt="Ícone de Login">
+                <h2>Login</h2>
+            </div>
+            <div class="login-group">
+                <label for="login-email">E-mail</label>
+                <input type="email" id="login-email" class="input" placeholder="Digite seu e-mail">
+                <span class="error-message" id="login-email-error"></span>
+            </div>
+            <div class="login-group">
+                <label for="login-password">Senha</label>
+                <input type="password" id="login-password" class="input" placeholder="Digite sua senha">
+                <span class="error-message" id="login-password-error"></span>
+            </div>
+            <div class="button">
+                <button type="submit" class="btn-login">Login</button>    
+            </div>
+            <p class="toggle-form">
+                Não tem uma conta? <a href="./signup.html">Cadastre-se</a>
+            </p>
+        </form>
+
+        <!-- Pop-up Usuário Não Cadastrado -->
+        <div class="popup-overlay" id="popup-not-registered-overlay" style="display: none;">
+            <div class="popup">
+                <img src="../assets/images/logon-negado.png" alt="Login Negado">
+                <p>Usuário não cadastrado. Por favor, realize o cadastro.</p>
+                <div class="popup-buttons">
+                    <button id="close-popup" class="button">Fechar</button>
+                    <button id="go-to-signup" class="button">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts JavaScript -->
+    <script src="../assets/js/login-validation.js"></script>
+    
+</body>
+</html>

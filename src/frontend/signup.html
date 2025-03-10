@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../assets/css/globals.css">
+    <link rel="stylesheet" href="../assets/css/signup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Formulário de Cadastro -->
+        <form id="signup-form" class="form" novalidate>
+            <div class="header">
+                <img src="../assets/images/user-200x200.png" alt="Ícone de Cadastro">
+                <h2>Cadastro</h2>
+            </div>
+            <div class="form-group">
+                <label for="signup-firstname">Nome</label>
+                <input type="text" id="signup-firstname" class="input" placeholder="Digite seu nome">
+                <span class="error-message" id="signup-firstname-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="signup-lastname">Sobrenome</label>
+                <input type="text" id="signup-lastname" class="input" placeholder="Digite seu sobrenome">
+                <span class="error-message" id="signup-lastname-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="signup-email">E-mail</label>
+                <input type="email" id="signup-email" class="input" placeholder="Digite seu e-mail">
+                <span class="error-message" id="signup-email-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="signup-phone">Telefone</label>
+                <input type="text" id="signup-phone" class="input" placeholder="Digite seu telefone">
+                <span class="error-message" id="signup-phone-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="signup-password">Senha</label>
+                <input type="password" id="signup-password" class="input" placeholder="Digite sua senha">
+                <span class="error-message" id="signup-password-error"></span>
+                <!-- Lista de regras da senha -->
+                <ul class="password-rules">
+                    <li id="rule-length">Mínimo 6, máximo 12 dígitos</li>
+                    <li id="rule-uppercase">Pelo menos uma letra maiúscula</li>
+                    <li id="rule-lowercase">Pelo menos uma letra minúscula</li>
+                    <li id="rule-special">Pelo menos um caractere especial</li>
+                </ul>
+            </div>
+            <div class="form-group">
+                <label for="signup-confirm-password">Confirmar Senha</label>
+                <input type="password" id="signup-confirm-password" class="input" placeholder="Confirme sua senha">
+                <span class="error-message" id="signup-confirm-password-error"></span>
+            </div>
+            <div class="button">
+                <button type="submit" class="btn-signup">Cadastro</button>    
+            </div>
+            <p class="toggle-form">
+                Já tem uma conta? <a href="./login.html">Faça login</a>
+            </p>
+        </form>
+
+        <!-- Pop-up Cadastro Realizado com Sucesso -->
+        <div class="popup-overlay" id="popup-signup-success-overlay" style="display: none;">
+            <div class="popup">
+                <img src="../assets/images/success-icon.png" alt="Sucesso">
+                <p>Cadastro realizado com sucesso!</p>
+                <button id="close-success-popup" class="button">Fechar</button>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts JavaScript -->
+    <script src="../assets/js/signup.js"></script>
+    <script src="../assets/js/signup-validation.js"></script>
+</body>
+</html>

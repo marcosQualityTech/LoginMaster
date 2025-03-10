@@ -1,0 +1,11 @@
+/* login.css */
+.login-header {
+    text-align: center;
+}
+
+.login-group {
+    margin-bottom: 15px;
+}
+body.blur {
+    filter: blur(5px);
+}
