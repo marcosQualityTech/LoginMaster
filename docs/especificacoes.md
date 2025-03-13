@@ -12,13 +12,13 @@ Dando sequência à apresentação do LoginMaster, este documento detalha os cen
 2. **Quero**: Autenticar-me fornecendo credenciais válidas (e-mail e senha).
 3. **Para**: Acessar minha conta na aplicação.
 4. **Caminho Principal**:
-   5. Usuário acessa a tela de login.
-   6. Insere e-mail e senha nos campos correspondentes.
-   7. Clica no botão "Login".
-   8. Sistema verifica credenciais no `users.json`:
-      - **Se válidas**: Login bem-sucedido.
-      - **Se inválidas**: Exibe mensagem "Credenciais inválidas. Verifique e tente novamente."
-      - **Se usuário não cadastrado**: Exibe pop-up com as opções "Fechar" e "Cadastrar".
+  - Usuário acessa a tela de login.
+  - Insere e-mail e senha nos campos correspondentes.
+  - Clica no botão "Login".
+  - Sistema verifica credenciais no `users.json`:
+    - **Se válidas**: Login bem-sucedido.
+    - **Se inválidas**: Exibe mensagem "Credenciais inválidas. Verifique e tente novamente."
+    - **Se usuário não cadastrado**: Exibe pop-up com as opções "Fechar" e "Cadastrar".
 5. **Resultados Esperados**:
    - Mensagens de erro claras em caso de falha.
    - Pop-up funcional e intuitiva para cadastro.
@@ -30,12 +30,12 @@ Dando sequência à apresentação do LoginMaster, este documento detalha os cen
 2. **Quero**: Cadastrar-me no sistema preenchendo um formulário.
 3. **Para**: Ter acesso à aplicação.
 4. **Caminho Principal**:
-   5. Acessa a tela de cadastro.
-   6. Preenche os campos obrigatórios: Nome, Sobrenome, CPF, E-mail, Telefone, Senha, Confirmar Senha.
-   7. Clica no botão "Cadastrar".
-   8. Sistema valida os dados:
-      - **Se válidos**: Dados são salvos no `users.json`, e exibe pop-up "Cadastro realizado com sucesso."
-      - **Se inválidos**: Exibe mensagens de erro específicas para cada campo.
+  - Acessa a tela de cadastro.
+  - Preenche os campos obrigatórios: Nome, Sobrenome, CPF, E-mail, Telefone, Senha, Confirmar Senha.
+  - Clica no botão "Cadastrar".
+  - Sistema valida os dados:
+    - **Se válidos**: Dados são salvos no `users.json`, e exibe pop-up "Cadastro realizado com sucesso."
+    - **Se inválidos**: Exibe mensagens de erro específicas para cada campo.
 5. **Resultados Esperados**:
    - Feedback visual claro.
    - Formulário limpo após o sucesso.
@@ -47,10 +47,10 @@ Dando sequência à apresentação do LoginMaster, este documento detalha os cen
 2. **Quero**: Alternar entre as telas de login e cadastro.
 3. **Para**: Ter flexibilidade na interação com o sistema.
 4. **Caminho Principal**:
-   5. Usuário clica em "Não tem uma conta? Cadastre-se" na tela de login.
-   6. Sistema redireciona para a tela de cadastro.
-   7. Usuário clica em "Já tem uma conta? Faça login" na tela de cadastro.
-   8. Sistema redireciona para a tela de login.
+  - Usuário clica em "Não tem uma conta? Cadastre-se" na tela de login.
+  - Sistema redireciona para a tela de cadastro.
+  - Usuário clica em "Já tem uma conta? Faça login" na tela de cadastro.
+  - Sistema redireciona para a tela de login.
 5. **Resultados Esperados**:
    - Campos e mensagens são limpos ao alternar telas.
    - Foco no primeiro campo do formulário exibido.
